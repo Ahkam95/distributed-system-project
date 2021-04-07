@@ -33,7 +33,7 @@ public class BootstrapNode {
         Credential nodeCredential = new Credential(nodeIp, nodePort, nodeUsername);
 
         // Initiate the thread for UDP connection
-        NodeOps nodeOpsUDP = new NodeOps(bootstrapServerCredential, nodeCredential);
+        NodeOpsUDP nodeOpsUDP = new NodeOpsUDP(bootstrapServerCredential, nodeCredential);
 
         // Register in network
         nodeOpsUDP.register();
